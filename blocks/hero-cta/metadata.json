@@ -1,0 +1,18 @@
+{
+  "variantName": "hero-cta",
+  "baseBlock": "hero",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "photo call-to-action banner",
+    "description": "Photo background (home-cta-bg) with dark bottom gradient overlay; centered H2, paragraph, purple button | White text centered | Contained photo banner with dark bottom gradient overlay, centered H2, paragraph and single button"
+  },
+  "contentPattern": {
+    "structure": "row 1 holds the background image; row 2 holds an H2, a paragraph and a button link",
+    "rationale": "Photo background with overlaid centered CTA text is a hero; photo belongs to the block, section not colored"
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "sourceUrl": "https://brand.gehealthcare.com/",
+  "usage": "Closing photo banner with gradient overlay, centered H2, paragraph and one button.",
+  "reuseGuidance": "Use for mid/bottom-of-page call-to-action banners with a photo background. Use hero-video for video backgrounds."
+}

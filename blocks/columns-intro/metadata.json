@@ -1,0 +1,18 @@
+{
+  "variantName": "columns-intro",
+  "baseBlock": "columns",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "intro band pairing brand copy with a large image",
+    "description": "Very light lavender band; text column left, angled guideline-pages composite image right | Eyebrow small text, large H2, body paragraph, primary purple button + outlined button | Text column (eyebrow, H2, copy, two buttons) beside a large angled composite image bleeding off the right edge"
+  },
+  "contentPattern": {
+    "structure": "one row, two cells: cell 1 has an eyebrow paragraph, H2, body paragraph and one or more button links; cell 2 has a single image",
+    "rationale": "Fixed two-part side-by-side layout (text | image) that never wraps into a grid: Columns"
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "sourceUrl": "https://brand.gehealthcare.com/",
+  "usage": "Introductory text column (eyebrow, H2, copy, two buttons) beside a large image.",
+  "reuseGuidance": "Use for a two-part text | image intro band. One row, two cells. Use columns-panel when the text sits in a white panel next to a photo."
+}

@@ -1,0 +1,18 @@
+{
+  "variantName": "carousel-marquee",
+  "baseBlock": "carousel",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "continuous auto-scrolling image strip",
+    "description": "Auto-scrolling marquee of 5 healthcare photos (duplicated by the swiper for looping) | Images of varying widths, small gaps, no text or controls | Image-only continuous auto-scrolling marquee, no arrows or dots\nAuto-scrolling marquee of 4 large brand-guideline slide images (lightbox-enabled) | ~500px tall slides, light lavender card backgrounds in images | Image-only continuous auto-scrolling marquee, no arrows or dots (reuses the same variant as the photo marquee)"
+  },
+  "contentPattern": {
+    "structure": "one row per image, each row has one cell with an image (an optional second cell adds a caption)",
+    "rationale": "Interactive auto-rotating image slider: Carousel, one row per unique image\nInteractive auto-rotating image slider: Carousel, one row per unique image"
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "sourceUrl": "https://brand.gehealthcare.com/",
+  "usage": "Image-only continuous auto-scrolling strip of photos or slides.",
+  "reuseGuidance": "One row per unique image; do not duplicate images for looping, the block clones them. No arrows or dots; use the standard carousel for navigable slides."
+}

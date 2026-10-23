@@ -1,0 +1,18 @@
+{
+  "variantName": "hero-video",
+  "baseBlock": "hero",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "full-bleed video hero with eyebrow, H1, pause control and scroll-down link",
+    "description": "Full-width autoplay background video (1.mp4) with dark overlay; centered eyebrow + H1; pause button bottom-left; 'Explore the brand' jump link bottom-center | ~670px tall, white text over video | Full-bleed autoplay background video, centered eyebrow + H1, pause control and scroll-down jump link"
+  },
+  "contentPattern": {
+    "structure": "row 1 holds the background video as a link to an .mp4 (optionally plus a poster image); row 2 holds an eyebrow paragraph, the H1 and an optional in-page link (href starting with #) that becomes the scroll-down jump link",
+    "rationale": "Full-bleed background media with overlaid headline is a hero; background video belongs to the block, so the section is not colored"
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "sourceUrl": "https://brand.gehealthcare.com/",
+  "usage": "Page-top hero with a full-bleed looping background video, eyebrow, H1 and a scroll-down jump link.",
+  "reuseGuidance": "Use when the hero background is a video (author the .mp4 as a link in row 1; an optional image in the same cell becomes the poster). Use hero-cta for photo backgrounds."
+}

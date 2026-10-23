@@ -1,20 +1,117 @@
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
-}
-
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+  background-color: #f4f1f8;
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 24px;
 }
 
 footer .footer p {
   margin: 0;
 }
 
+footer .footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer .footer a:any-link {
+  color: #212934;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer .footer a:hover,
+footer .footer a:focus-visible {
+  color: #472271;
+  text-decoration: underline;
+}
+
+footer .footer-section {
+  box-sizing: border-box;
+  max-width: calc(var(--content-max-width) + 32px);
+  margin: 0 auto;
+  padding: 20px 16px 16px;
+}
+
+footer .footer-section + .footer-section {
+  padding: 16px 16px 20px;
+}
+
+/* logo */
+footer .footer .footer-logo a {
+  display: inline-block;
+}
+
+footer .footer-logo img {
+  display: block;
+  width: 145px;
+  height: auto;
+}
+
+/* link lists */
+footer .footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 10px;
+}
+
+footer .footer-links a:any-link {
+  display: inline-block;
+  padding: 4px;
+}
+
+footer .footer-logo + .footer-links {
+  margin-top: 16px;
+}
+
+footer .footer .footer-text {
+  margin: 16px 0 28px;
+}
+
+footer .footer-links.footer-legal {
+  gap: 0;
+}
+
+footer .footer-links.footer-legal a:any-link {
+  padding: 0 16px 0 0;
+}
+
 @media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+  footer .footer-section {
+    max-width: calc(var(--content-max-width) + 48px);
+    padding: 32px 24px 24px;
+  }
+
+  footer .footer-section + .footer-section {
+    display: flex;
+    align-items: flex-start;
+    padding: 16px 24px 20px;
+  }
+
+  footer .footer-section + .footer-section > * {
+    box-sizing: border-box;
+    flex: 0 0 50%;
+    padding: 0 40px;
+  }
+
+  footer .footer-links {
+    gap: 0 20px;
+  }
+
+  footer .footer-logo + .footer-links {
+    margin: 16px 0;
+  }
+
+  footer .footer .footer-text {
+    margin: 16px 0 0;
+  }
+
+  footer .footer-links.footer-legal {
+    margin-top: 12px;
+  }
+
+  footer .footer-links.footer-legal a:any-link {
+    padding: 4px 16px 4px 0;
   }
 }

@@ -1,0 +1,96 @@
+/* full-bleed: source marquee spans the viewport edge to edge */
+main > .section > .carousel-marquee-wrapper {
+  max-width: 100%;
+  padding: 0;
+}
+
+.carousel-marquee {
+  --carousel-marquee-gap: 30px;
+  --carousel-marquee-height: 350px;
+  --carousel-marquee-duration: 30s;
+
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-marquee .carousel-marquee-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-marquee .carousel-marquee-track {
+  display: flex;
+  width: max-content;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  animation: carousel-marquee-scroll var(--carousel-marquee-duration) linear infinite;
+}
+
+.carousel-marquee:hover .carousel-marquee-track,
+.carousel-marquee:focus-within .carousel-marquee-track {
+  animation-play-state: paused;
+}
+
+/* margin-right (not gap) so the -50% loop point lands exactly on the clone set */
+.carousel-marquee .carousel-marquee-slide {
+  position: relative;
+  flex: 0 0 auto;
+  height: var(--carousel-marquee-height);
+  margin: 0 var(--carousel-marquee-gap) 0 0;
+  padding: 0;
+}
+
+.carousel-marquee .carousel-marquee-slide picture {
+  display: block;
+  height: 100%;
+}
+
+.carousel-marquee .carousel-marquee-slide img {
+  display: block;
+  width: auto;
+  max-width: none;
+  height: 100%;
+  border-radius: 0;
+}
+
+.carousel-marquee .carousel-marquee-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 8px 12px;
+}
+
+@keyframes carousel-marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel-marquee .carousel-marquee-track {
+    animation: none;
+  }
+
+  .carousel-marquee .carousel-marquee-viewport {
+    overflow-x: auto;
+  }
+}
+
+@media (width >= 768px) {
+  .carousel-marquee {
+    --carousel-marquee-height: 400px;
+  }
+}
+
+@media (width > 1024px) {
+  .carousel-marquee {
+    --carousel-marquee-height: 450px;
+    --carousel-marquee-duration: 15s;
+  }
+}

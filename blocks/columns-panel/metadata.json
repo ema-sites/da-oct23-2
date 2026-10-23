@@ -1,0 +1,18 @@
+{
+  "variantName": "columns-panel",
+  "baseBlock": "columns",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "photo beside a white text panel with a call to action",
+    "description": "Hard-stop gradient: top half light lavender (#fbf9fd), bottom half GE purple (#6022a6); photo left, white text panel right overlapping both halves | Text panel white background; eyebrow, H2, paragraph, solid purple button | Photo left with a white text panel right that overlaps the section's two-tone background"
+  },
+  "contentPattern": {
+    "structure": "one row, two cells: cell 1 has a single image; cell 2 has an eyebrow paragraph, H2, body paragraph and a button link",
+    "rationale": "Fixed image | text side-by-side layout: Columns"
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "sourceUrl": "https://brand.gehealthcare.com/",
+  "usage": "Photo on one side and a white text panel (eyebrow, H2, copy, button) on the other.",
+  "reuseGuidance": "Pair with a two-tone section style so the panel overlaps both bands. One row, two cells."
+}

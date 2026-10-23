@@ -1,0 +1,143 @@
+{
+  "metadata": {
+    "projectType": "da"
+  },
+  "templates": [
+    {
+      "name": "home",
+      "urls": [
+        "http://brand.gehealthcare.com/"
+      ],
+      "representativeUrl": "http://brand.gehealthcare.com/",
+      "description": "GE HealthCare Brand Hub homepage: video hero, intro columns, photo marquees, core brand element cards, brand training panel and guidelines CTA",
+      "urlPattern": "/",
+      "blocks": [
+        {
+          "name": "hero-video",
+          "instances": [
+            ".home-hero-banner"
+          ]
+        },
+        {
+          "name": "columns-intro",
+          "instances": [
+            "#intro"
+          ]
+        },
+        {
+          "name": "carousel-marquee",
+          "instances": [
+            ".slider-section-wrap .marquee",
+            ".slider-section-2-wrap .marquee-brand"
+          ]
+        },
+        {
+          "name": "cards-media",
+          "instances": [
+            ".core-brand-section .fusion-post-cards"
+          ]
+        },
+        {
+          "name": "columns-panel",
+          "instances": [
+            "#wide-width-section"
+          ]
+        },
+        {
+          "name": "hero-cta",
+          "instances": [
+            ".brand-guidelines-section"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "rc3",
+          "name": "Hero video banner",
+          "selector": [
+            ".home-hero-banner"
+          ],
+          "style": null,
+          "blocks": [
+            "hero-video"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "rc4",
+          "name": "Brand Hub intro",
+          "selector": [
+            "#intro"
+          ],
+          "style": "light-lavender",
+          "blocks": [
+            "columns-intro"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "rc5",
+          "name": "Photo marquee",
+          "selector": [
+            ".slider-section-wrap"
+          ],
+          "style": null,
+          "blocks": [
+            "carousel-marquee"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "rc6",
+          "name": "Core brand elements",
+          "selector": [
+            ".core-brand-section"
+          ],
+          "style": "light-lavender, centered",
+          "blocks": [
+            "cards-media"
+          ],
+          "defaultContent": [
+            ".core-brand-section .fusion-column-no-min-height"
+          ]
+        },
+        {
+          "id": "rc7",
+          "name": "Brand pages marquee",
+          "selector": [
+            ".slider-section-2-wrap"
+          ],
+          "style": null,
+          "blocks": [
+            "carousel-marquee"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "rc8",
+          "name": "Brand training",
+          "selector": [
+            "#wide-width-section"
+          ],
+          "style": "lavender-purple-gradient",
+          "blocks": [
+            "columns-panel"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "rc9",
+          "name": "Guidelines CTA",
+          "selector": [
+            ".brand-guidelines-section"
+          ],
+          "style": null,
+          "blocks": [
+            "hero-cta"
+          ],
+          "defaultContent": []
+        }
+      ]
+    }
+  ]
+}

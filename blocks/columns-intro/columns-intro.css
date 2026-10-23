@@ -1,0 +1,100 @@
+/* columns-intro: text column (eyebrow, H2, copy, buttons) beside a bleeding composite image */
+
+.columns-intro > .columns-intro-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.columns-intro .columns-intro-text-col > :last-child {
+  margin-bottom: 0;
+}
+
+/* eyebrow: 16px/24px mobile, 18px/27px desktop, 600, 2% tracking */
+.columns-intro .columns-intro-eyebrow {
+  margin: 0 0 20px;
+  font-size: var(--eyebrow-font-size);
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* buttons: stacked full width on mobile (10px apart) */
+.columns-intro .columns-intro-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.columns-intro .columns-intro-actions > p {
+  margin: 0;
+}
+
+main .columns-intro .columns-intro-text-col a.button:any-link {
+  width: 100%;
+}
+
+/* source hides the composite image on small screens */
+.columns-intro .columns-intro-img-col {
+  display: none;
+}
+
+.columns-intro img {
+  display: block;
+  height: auto;
+}
+
+@media (width >= 600px) {
+  .columns-intro .columns-intro-actions {
+    flex-flow: row wrap;
+    gap: 10px 16px;
+  }
+
+  main .columns-intro .columns-intro-text-col a.button:any-link {
+    width: auto;
+  }
+}
+
+@media (width >= 900px) {
+  /* full-width wrapper so the image can bleed to the section edge */
+  .columns-intro-wrapper {
+    container-type: inline-size;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .columns-intro {
+    box-sizing: border-box;
+    max-width: calc(var(--content-max-width) + 40px);
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .columns-intro > .columns-intro-row {
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  .columns-intro .columns-intro-text-col {
+    flex: 0 0 66.6667%;
+    min-width: 0;
+  }
+
+  .columns-intro .columns-intro-actions {
+    padding-bottom: 10px;
+  }
+
+  /* image column runs from the text column to the section's right edge and crops the image */
+  .columns-intro .columns-intro-img-col {
+    display: block;
+    flex: 1 1 0;
+    min-width: 0;
+    margin-right: calc((100% - 100cqw) / 2);
+    overflow: hidden;
+  }
+
+  /* image is 110% of the row width, left-aligned, cropped on the right */
+  .columns-intro .columns-intro-img-col img {
+    width: calc(min(var(--content-max-width), 100cqw - 40px) * 1.1);
+    max-width: none;
+  }
+}

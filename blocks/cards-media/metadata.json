@@ -1,0 +1,18 @@
+{
+  "variantName": "cards-media",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "linked topic cards with image or looping video media",
+    "description": "Very light lavender band; centered intro text above a 3x2 grid of white cards | Cards: media top (image or looping video), H3, description, 'Learn more >' link | White cards with full-width image or looping video on top, H3, description and 'Learn more' arrow link; 3-up grid"
+  },
+  "contentPattern": {
+    "structure": "one row per card: cell 1 holds an image or a link to an .mp4 video; cell 2 holds an H3, a description and a Learn more link",
+    "rationale": "Repeating look-alike items linking to detail pages that wrap in a grid: Cards"
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "sourceUrl": "https://brand.gehealthcare.com/",
+  "usage": "Grid of cards each with image or looping video, H3, description and a Learn more link.",
+  "reuseGuidance": "Use for 3-up linked topic cards. Media cell accepts a picture or a link to an .mp4."
+}
